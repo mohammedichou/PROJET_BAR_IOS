@@ -8,8 +8,9 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class AllBarViewController: UIViewController{
+class AllBarViewController: UIViewController, CLLocationManagerDelegate{
     
     @IBOutlet weak var mapall: MKMapView!
     var locationManager = CLLocationManager()
@@ -17,11 +18,34 @@ class AllBarViewController: UIViewController{
     var Bars = [Bar]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.requestAlwaysAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        
+        }
         loadBar()
+        
+        
+        
+        
+        
         
         // Do any additional setup after loading the view.
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first{
+            print(location)
+            let span =  MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+            let region = MKCoordinateRegion(center:location.coordinate, span: span)
+            mapall.region = region
+            
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -56,9 +80,8 @@ class AllBarViewController: UIViewController{
                             let point = annot(title: bar1.NomBar as String, locationName: "", discipline: "", coordinate: CLLocationCoordinate2D(latitude: bar1.P1.Latitude, longitude: bar1.P1.longitude))
                             
                             mapall.addAnnotation(point)
-                            let span =  MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-                            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 48.866667, longitude: 2.333333), span: span)
-                            mapall.setRegion(region, animated: true)
+                           
+                            
                             
                             
                             Bars += [bar1]

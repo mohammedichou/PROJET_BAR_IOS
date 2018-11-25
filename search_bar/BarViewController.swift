@@ -56,6 +56,7 @@ class BarViewController: UIViewController {
     
     @IBAction func actionBack(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+        
     }
     
     /*

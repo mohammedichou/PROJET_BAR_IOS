@@ -267,7 +267,7 @@
         "name": "Lockwood",
         "url": "/bar/paris/le-louvre/lockwood",
         "image_url": "https://prh-wbb-prod.s3.amazonaws.com/bar_640_480/lockwood_001_553f5b2c99f4b.jpg",
-        "tags": false,
+        "tags": "",
         "latitude": 48.867716087563,
         "longitude": 2.3469846706722
     }, {
@@ -420,7 +420,7 @@
         "name": "Delaville Caf\u00e9",
         "url": "/bar/paris/le-louvre/delaville-cafe",
         "image_url": "https://prh-wbb-prod.s3.amazonaws.com/generic_640_480/WBB%20holding%20image2_54abcf8947bad_55b8d2356db99.jpg",
-        "tags": false,
+        "tags": "",
         "latitude": 48.870619650108,
         "longitude": 2.3491106416989
     }, {
@@ -519,7 +519,7 @@
         "name": "Panic Room",
         "url": "/bar/paris/bastille-and-the-marais/panic-room",
         "image_url": "https://prh-wbb-prod.s3.amazonaws.com/bar_640_480/5462257f1d1e0_panice%20room%20paris%203.jpg",
-        "tags": false,
+        "tags": "",
         "latitude": 48.86120718996,
         "longitude": 2.3675529663673
     }, {
@@ -546,7 +546,7 @@
         "name": "Pas de Loup",
         "url": "/bar/paris/bastille-and-the-marais/pas-de-loup",
         "image_url": "https://prh-wbb-prod.s3.amazonaws.com/generic_640_480/WBB%20holding%20image4_54abcf6d1f68d_55b8d2015bb13.jpg",
-        "tags": false,
+        "tags": "",
         "latitude": 48.8630232,
         "longitude": 2.3674255999999
     }, {
@@ -564,7 +564,7 @@
         "name": "Bespoke",
         "url": "/bar/paris/bastille-and-the-marais/bespoke",
         "image_url": "https://prh-wbb-prod.s3.amazonaws.com/bar_640_480/_MG_2677_561b73251b04a.jpeg",
-        "tags": false,
+        "tags": "",
         "latitude": 48.8629101,
         "longitude": 2.3675675
     }, {
