@@ -852,7 +852,7 @@
         "name": "Bar des Ferailleurs",
         "url": "/bar/paris/bastille-and-the-marais/bar-des-ferailleurs",
         "image_url": "https://prh-wbb-prod.s3.amazonaws.com/generic_640_480/WBB%20holding%20image2_54abcf8947bad_55b8d2356db99.jpg",
-        "tags": false,
+        "tags": "",
         "latitude": 48.8538,
         "longitude": 2.37247
     }, {
@@ -906,7 +906,7 @@
         "name": "Barrio Latino",
         "url": "/bar/paris/bastille-and-the-marais/barrio-latino",
         "image_url": "https://prh-wbb-prod.s3.amazonaws.com/bar_640_480/545b61a611ea6_barrio%20latino%201.jpg",
-        "tags": false,
+        "tags": "",
         "latitude": 48.852205,
         "longitude": 2.372693
     }, {

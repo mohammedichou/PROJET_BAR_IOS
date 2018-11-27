@@ -28,6 +28,7 @@ class AllBarViewController: UIViewController, CLLocationManagerDelegate{
         
         }
         loadBar()
+        mapall.showsUserLocation = true
         
         
         
@@ -59,7 +60,7 @@ class AllBarViewController: UIViewController, CLLocationManagerDelegate{
     private func loadBar(){
         
         var i: Int
-        for i in 1...15{
+        for i in 1...30{
             if let url = Bundle.main.url(forResource: "Pensebete", withExtension: "json")
             {
                 if let data = NSData(contentsOf: url) {
